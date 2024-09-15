@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Tails</title>
+    <link rel="stylesheet" href="charity.css">
+    <script src="project.js"></script>
+
+    <!-- - google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linkhref="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"rel="stylesheet">
+</head>
+<body>
+     <!-- - #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Happy Tails</a>
+      </h1>
+
+      <select name="language" class="lang-switch">
+
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+
+      </select>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">Happy Tails</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Event</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <span>Welcome to Happy Tails</span>
+          </p>
+
+          <h2 class="h1 hero-title">
+            Roar Out Loud and <strong>Save Animals</strong>
+          </h2>
+
+          <p class="hero-text">
+            It's not enough to love animals; we must actively protect and preserve them.
+            It's our duty and responsibility as custodians of this planet.
+          </p>
+
+          <button onclick = "myfun()" class="btn btn-primary">
+            <span>Donate Here</span>
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+      
+         <script>
+          function myfun(){
+            var x = document.getElementById("my-image");
+            if(x.style.display === "block"){
+              x.style.display = "none";
+            }else{
+              x.style.display = "block";
+            }
+          }
+         </script>
+         <img style="display: none;" id = "my-image" src="https://th.bing.com/th/id/OIP.37vFdASd4EnSOixwVQ5KVAHaJH?w=160&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7"></img>
+
+       </div>
+      </section> 
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features">
+        <div class="container">
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Safe Shelter</h3>
+
+                <p class="item-text">
+                  Don't destroy their homes
+                  to build yours.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+               <ion-icon name="water-outline"></ion-icon>
+              </div>
+              
+              <div>
+                <h3 class="h4 item-title">Safe Water</h3>
+
+                <p class="item-text">
+                  Water is the driving force
+                  of all nature.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Ecology Save</h3>
+
+                <p class="item-text">
+                  The future of ecology 
+                  is in our hands.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Environment</h3>
+
+                <p class="item-text">
+                  Love the environment as you
+                  would love yourself.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <h2 class="deco-title">About Us</h2>
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="https://images.pexels.com/photos/3777200/pexels-photo-3777200.jpeg?auto=compress&cs=tinysrgb&w=600" width="315" height="300" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <img src="https://images.pexels.com/photos/19590471/pexels-photo-19590471/free-photo-of-panda-bear-sitting-on-ground.jpeg?auto=compress&cs=tinysrgb&w=600" width="315" height="300" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+
+              <div class="banner-col">
+                <img src="https://images.pexels.com/photos/3739327/pexels-photo-3739327.jpeg?auto=compress&cs=tinysrgb&w=600" width="315" height="300" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+
+                <img src="https://images.pexels.com/photos/60555/young-fallow-deer-kitz-fallow-deer-fur-60555.jpeg?auto=compress&cs=tinysrgb&w=600" width="315" height="300" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">
+              
+              <span>Why Choose Us</span>
+            </p>
+
+            <h2 class="h2 section-title">
+              Rise Your Hand to Save <strong>World Animals Life</strong>
+            </h2>
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Our Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Our Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Next Plan</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <p class="section-text">
+                Animals, they are one of the most beautiful gifts we have and, you know,
+                if there are people that have compassion, there are very few people that
+                put their money into animal rescue operations. And if there is someone that
+                has that passion, animals need all the help they can get.
+              </p>
+
+              <ul class="tab-list">
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Foods.</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Education.</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Water.</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Charity For Medical.</p>
+                </li>
+
+              </ul>
+
+              <button class="btn btn-secondary">
+                <span>Learn More</span>
+
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <div class="cta-content">
+            <h2 class="h2 section-title">550+ Trusted Global Partners</h2>
+
+            <button class="btn btn-outline">
+              <span>Become a Partner</span>
+
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="https://images.pexels.com/photos/59989/elephant-herd-of-elephants-african-bush-elephant-africa-59989.jpeg?auto=compress&cs=tinysrgb&w=600" width="1120" height="228" loading="lazy" alt="Fox"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+        <div class="container">
+
+          <p class="section-subtitle">
+
+            <span>What We Do</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            We Work Differently to <strong>keep The Animals Safe</strong>
+          </h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Save Nature</h3>
+
+                <p class="card-text">
+                  Let us make our planet
+                  a better place. Save the 
+                  planet Earth.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Save Ecology</h3>
+
+                <p class="card-text">
+                  Let us sow the seeds of change, and protect
+                  nature's bountiful range.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="flower-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Tree Plantation</h3>
+
+                <p class="card-text">
+                  Saving trees would lessen impact of climate
+                  change and help save lives.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Clear Ocean</h3>
+
+                <p class="card-text">
+                  With every drop of water you drink,
+                  you're connected to the sea.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #DONATE
+      -->
+
+      <section class="section donate" id="donate">
+        <div class="container">
+
+          <ul class="donate-list">
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="https://images.pexels.com/photos/1926338/pexels-photo-1926338.jpeg?auto=compress&cs=tinysrgb&w=600" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="256">Rs.17,56,000</data>
+                    </p>
+
+                    <data class="progress-value" value="83">85%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Raise Hand To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">Rs.20,00,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">Rs.2,44,000</data>
+                    </p>
+
+                  </div>
+
+                  <button onclick="myfuunc()" class="btn btn-secondary">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <img  style="display: none;" id="myddiv" src="https://th.bing.com/th/id/OIP.37vFdASd4EnSOixwVQ5KVAHaJH?w=160&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+
+                  <script>
+                    function myfuunc(){
+                      var x = document.getElementById("myddiv");
+                      if(x.style.display === "none"){
+                        x.style.display = "block";
+                      }else{
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="https://images.pexels.com/photos/59840/elephant-baby-safari-elephants-africa-59840.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="256">Rs.20,00,000</data>
+                    </p>
+
+                    <data class="progress-value" value="83">80%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Raise Hand To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">Rs.25,00,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">Rs.5,00,000</data>
+                    </p>
+
+                  </div>
+
+                  <button onclick="myyfunc()" class="btn btn-secondary">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <img  style="display: none;" id="myydiv" src="https://th.bing.com/th/id/OIP.37vFdASd4EnSOixwVQ5KVAHaJH?w=160&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+
+                  <script>
+                    function myyfunc(){
+                      var x = document.getElementById("myydiv");
+                      if(x.style.display === "none"){
+                        x.style.display = "block";
+                      }else{
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="https://images.pexels.com/photos/162240/bull-calf-heifer-ko-162240.jpeg?auto=compress&cs=tinysrgb&w=600" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="256">Rs.8,50,000</data>
+                    </p>
+
+                    <data class="progress-value" value="83">85%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Raise Hand To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">Rs.10,00,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">Rs.1,50,000</data>
+                    </p>
+
+                  </div>
+
+                  <button onclick="myfuncc()" class="btn btn-secondary">
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <img  style="display: none;" id="mydivv" src="https://th.bing.com/th/id/OIP.37vFdASd4EnSOixwVQ5KVAHaJH?w=160&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+
+                  <script>
+                    function myfuncc(){
+                      var x = document.getElementById("mydivv");
+                      if(x.style.display === "none"){
+                        x.style.display = "block";
+                      }else{
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="https://images.pexels.com/photos/16040/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="256">Rs.13,50,000</data>
+                    </p>
+
+                    <data class="progress-value" value="83">90%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Raise Hand To Save Animals</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">Rs.15,00,000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">Rs.1,50,000</data>
+                    </p>
+
+                  </div>
+
+                  <button onclick="myfunc()" class = "btn btn-secondary">
+                    
+                    <span>Donation</span>
+
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  
+                  <img  style="display: none;" id="mydiv" src="https://th.bing.com/th/id/OIP.37vFdASd4EnSOixwVQ5KVAHaJH?w=160&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+
+                  <script>
+                    function myfunc(){
+                      var x = document.getElementById("mydiv");
+                      if(x.style.display === "none"){
+                        x.style.display = "block";
+                      }else{
+                        x.style.display = "none";
+                      }
+                    }
+                  </script>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="testi">
+
+        <div class="testi-content">
+
+          <p class="section-subtitle">
+
+            <span>Our Testimonials</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            What People Say About <strong>Our Organization</strong>
+          </h2>
+
+          <div class="testi-card">
+
+            <figure class="card-avatar">
+              <img src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=600" width="60" height="60" loading="lazy" alt="David S. Neuman">
+            </figure>
+
+            <div>
+              <blockquote class="testi-text">
+                I'm continually impressed by the transparency and accountability of this charity. They're 
+                always willing to share updates and stories about the animals they've helped, which makes 
+                me feel confident in supporting their cause.
+              </blockquote>
+
+              <h3 class="testi-name">Rahul Davidson</h3>
+
+              <p class="testi-title">Businessman</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <figure class="testi-banner">
+          <img src="https://images.pexels.com/photos/2912388/pexels-photo-2912388.jpeg?auto=compress&cs=tinysrgb&w=600" width="960" height="846" loading="lazy" alt="Rhinoceros"
+            class="img-cover">
+        </figure>
+
+      </section>
+
+      <!-- 
+        - #PARTNER
+      -->
+
+      <section class="section partner">
+        <div class="container">
+
+          <a href="#" class="partner-logo">
+            <img src="https://images.pexels.com/photos/1427430/pexels-photo-1427430.jpeg?auto=compress&cs=tinysrgb&w=600" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="gray">
+
+            <img src="https://images.pexels.com/photos/1427430/pexels-photo-1427430.jpeg?auto=compress&cs=tinysrgb&w=600" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="https://images.pexels.com/photos/5486955/pexels-photo-5486955.jpeg?auto=compress&cs=tinysrgb&w=600" width="163" height="55" loading="lazy" alt="Non Profit Agency"
+              class="gray">
+
+            <img src="https://images.pexels.com/photos/5486955/pexels-photo-5486955.jpeg?auto=compress&cs=tinysrgb&w=600" width="163" height="55" loading="lazy"
+              alt="Non Profit Agency" class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="https://images.pexels.com/photos/6348129/pexels-photo-6348129.jpeg?auto=compress&cs=tinysrgb&w=600" width="149" height="55" loading="lazy" alt="Rise Hand Help Us"
+              class="gray">
+
+            <img src="https://images.pexels.com/photos/6348129/pexels-photo-6348129.jpeg?auto=compress&cs=tinysrgb&w=600" width="149" height="55" loading="lazy"
+              alt="Rise Hand Help Us" class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="https://images.pexels.com/photos/6672099/pexels-photo-6672099.jpeg?auto=compress&cs=tinysrgb&w=600" width="169" height="58" loading="lazy" alt="Helping" class="gray">
+
+            <img src="https://images.pexels.com/photos/6672099/pexels-photo-6672099.jpeg?auto=compress&cs=tinysrgb&w=600" width="169" height="58" loading="lazy" alt="Helping"
+              class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="2fv7gw79.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization"
+              class="gray">
+
+            <img src="2fv7gw79.png" width="211" height="55" loading="lazy"
+              alt="Poor Fund Organization" class="color">
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event" id="event">
+        <div class="container">
+
+          <p class="section-subtitle">
+
+            <span>Event & Program</span>
+
+          </p>
+
+          <h2 class="h2 section-title">
+            Our Most Popular Causes For <strong>Building Fund</strong>
+          </h2>
+
+          <ul class="event-list">
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="01-05">
+                  <span class="month">Mar</span>
+
+                  <span class="date">03</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">World Wildlife Day</p>
+
+                    <h3 class="card-title">Celebrates and raises awareness of the world's wild animals and plants.</h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="02-23">
+                  <span class="month">Oct</span>
+
+                  <span class="date">08</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">World Animal Day</p>
+
+                    <h3 class="card-title">A day for animal rights and welfare celebrated worldwide.</h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="03-27">
+                  <span class="month">June</span>
+
+                  <span class="date">08</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">World Oceans Day</p>
+
+                    <h3 class="card-title">Emphasizes the importance of oceans and marine life conservation.</h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="insta-post">
+
+        <ul class="insta-post-list">
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="https://images.pexels.com/photos/5858368/pexels-photo-5858368.jpeg?auto=compress&cs=tinysrgb&w=600" width="320" height="300" loading="lazy" alt="Lion"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="https://images.pexels.com/photos/11760851/pexels-photo-11760851.jpeg?auto=compress&cs=tinysrgb&w=600" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="https://images.pexels.com/photos/2313396/pexels-photo-2313396.jpeg?auto=compress&cs=tinysrgb&w=600" width="320" height="300" loading="lazy" alt="Wild Bear"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="https://images.pexels.com/photos/2538270/pexels-photo-2538270.jpeg?auto=compress&cs=tinysrgb&w=600" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="https://images.pexels.com/photos/65320/polar-bear-bear-teddy-sleep-65320.jpeg?auto=compress&cs=tinysrgb&w=600" width="320" height="320" loading="lazy" alt="Horses"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="#" class="footer-link">Terms of use</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy & Policy</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        Copyright © 2024 <a href="#" class="copyright-link">Harsh Pawar</a>. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
